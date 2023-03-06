@@ -1,10 +1,10 @@
-FROM node:lts-gallium
+FROM node:alpine
 
 COPY . /app
 
 WORKDIR /app
 
-RUN apt update && apt install nano -y
+RUN apk update && apk add nano -f
 
 RUN npm install
 
