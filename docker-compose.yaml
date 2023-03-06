@@ -3,7 +3,7 @@ version: '3.8'
 services:
   database:
     container_name: cilist-db
-    image: cilist/db
+    image: mwbowo/cilistx-db:1.0
     ports:
       - "3306:3306"
     environment:
@@ -14,6 +14,7 @@ services:
       - DATABASE_DATABASE=people
       - DATABASE_HOST=localhost
       - DATABASE_PORT=3306
+  
   backend:
     container_name: cilist-be
     image: cilist/be
