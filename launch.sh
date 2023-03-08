@@ -25,3 +25,6 @@ sudo docker compose up -d
 
 # Run Restart docker BE
 sudo docker restart cilist-be
+
+# Run Restart docker BE
+sudo docker restart cilist-be
