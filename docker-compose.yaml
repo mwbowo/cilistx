@@ -3,7 +3,7 @@ version: '3.8'
 services:
   database:
     container_name: cilist-db
-    image: mwbowo/cilistx-db:1.0
+    image: mwbowo/cilistx-db:1.1
     ports:
       - "3306:3306"
     environment:
@@ -12,7 +12,7 @@ services:
   
   backend:
     container_name: cilist-be
-    image: mwbowo/cilisx-be:1.0
+    image: mwbowo/cilistx-be:1.1
     ports:
       - "5000:5000"
     depends_on:
@@ -21,7 +21,7 @@ services:
   
   frontend:
     container_name: cilist-fe
-    image: mwbowo/cilistx-fe:1.0
+    image: mwbowo/cilistx-fe:1.1
     ports:
       - "3000:3000"
     environment:
