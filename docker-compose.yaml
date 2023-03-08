@@ -17,6 +17,7 @@ services:
       - "5000:5000"
     depends_on:
       - database
+      - frontend
   
   frontend:
     container_name: cilist-fe
