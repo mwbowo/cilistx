@@ -21,4 +21,7 @@ sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io -y
 
 # Run docker compose 
-# sudo docker compose up -d 
+sudo docker compose up -d 
+
+# Run Restart docker BE
+sudo docker restart cilist-be

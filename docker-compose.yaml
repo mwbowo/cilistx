@@ -17,8 +17,7 @@ services:
       - "5000:5000"
     depends_on:
       - database
-      - frontend
-  
+      
   frontend:
     container_name: cilist-fe
     image: mwbowo/cilistx-fe:1.1
